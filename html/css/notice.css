@@ -1,0 +1,70 @@
+
+
+/*----------lightbox----------*/
+
+.lightbox_notice
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 60;
+  display: none;
+}
+
+.lightbox_notice.open{
+  display: block;
+}
+
+.notice{
+  padding-top: 80px;
+
+}
+
+.notice_in{
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.notice_in li{
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+
+.notice_in .notice_num{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+/* --- mobile --- */
+@media screen and (max-width: 1100px) {
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+}
+
+
+@media screen and (max-width: 460px) {
+
+}
+
+
+
+

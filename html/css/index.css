@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+.special {
+  font-family:'Boogaloo','微軟正黑體','Microsoft Jhenghei',Arial, sans-serif;
+}
+
+.kv img{
+  width: 100vw;
+}
+
+/*----------activity----------*/
+
+.activity{
+  padding: 120px 0;
+  background-color: #f5cb07;
+  position: relative;
+}
+
+.activity_info{
+  padding: 50px 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.activity_info span{
+  font-weight: 600;
+}
+
+.activity_btbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity_btbox li{
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 10px 20px;
+  margin: 0 30px;
+}
+
+.activity_btbox li:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.activity_btbox li:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #bf9b11;
+  z-index: -2;
+}
+
+
+
+/*----------prize----------*/
+
+.prize{
+  position: relative;
+  padding: 100px 0 100px;
+}
+
+.prize_titlebox{
+  position: relative;
+  padding: 10px 0;
+}
+
+.prize_circle{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.5em;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #000000;
+  z-index: 2;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.prize_circle .special{
+  font-size: 1.6em;
+  vertical-align: middle;
+}
+
+.prize_circle .num{
+  margin-right: 5px;
+}
+
+.prize_title{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.prize_title:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  border-radius: 60px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.prize_title:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: calc(10% + 5px);
+  width: 80%;
+  height: 100%;
+  border-radius: 60px;
+  background-color: #bf9b11;
+  z-index: -2;
+}
+
+.prize_info{
+  padding: 50px 0;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.prize_oil,
+.prize_week{
+  position: relative;
+}
+
+.oil_product{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.oil_pd:nth-child(1){
+  width: 35%;
+  margin-bottom: 50px;
+}
+.oil_pd:nth-child(2){
+  width: 35%;
+  margin-bottom: 50px;
+}
+
+.oil_pd{
+  width: 33.333%;
+}
+
+.oil_pd img{
+  width: 250px;
+  margin: auto;
+}
+
+.oil_name,
+.week_name{
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.oil_small,
+.week_small{
+  font-size: 0.8rem;
+}
+
+.week_product{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.week_pd{
+  width: 23%;
+  margin: 0 auto;
+}
+
+.week_pd img{
+  width: 200px;
+  margin: auto;
+}
+
+.week_name .hightlight{
+  background-color: #f5cb07;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.oil_name .hightlight{
+  display: inline-block;
+  background-color: #f5cb07;
+  border-radius: 50px;
+  padding: 10px 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.wave{
+  position: absolute;
+}
+
+.wave img{
+  width: 100%;
+}
+
+.w1{
+  width: 20%;
+  top: 50px;
+  left: 0;
+}
+
+.w2{
+  width: 25%;
+  bottom: -150px;
+  right: 0;
+}
+
+.w3{
+  width: 25%;
+  top: 20%;
+  left: 0;
+}
+
+.w4{
+  width: 20%;
+  top: -10%;
+  right: 0;
+}
+
+.w5{
+  width: 25%;
+  bottom: 0;
+  left: 0;
+}
+
+.w6{
+  width: 25%;
+  bottom: 0;
+  right: 0;
+}
+
+.l1{
+  width: 20%;
+  top: 20%;
+  right: 5%;
+}
+
+.p1{
+  width: 20%;
+  top: 15%;
+  left: 5%;
+}
+
+.p2{
+  width: 20%;
+  top: 40%;
+  right: 2%;
+}
+
+.week_btbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.week_btbox li{
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 10px 20px;
+  margin: 0 50px;
+}
+
+.week_btbox li:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.week_btbox li:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #bf9b11;
+  z-index: -2;
+}
+
+
+
+
+
+
+/* --- mobile --- */
+@media screen and (max-width: 1100px) {
+  .activity{
+    padding: 80px 0;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .activity{
+    padding: 50px 0;
+  }
+
+  .activity_info{
+    font-size: 1.2em;
+    padding: 20px;
+  }
+
+  .activity_btbox{
+    display: block;
+  }
+
+  .activity_btbox li{
+    font-size: 1.1em;
+    margin: 20px auto;
+    padding: 5px 20px;
+  }
+
+  .prize{
+    padding: 50px 0 80px;
+  }
+
+  .prize_circle{
+    width: 120px;
+    height: 120px;
+    font-size: 1.3em;
+  }
+
+  .prize_title{
+    font-size: 1.3em;
+    padding: 10px;
+  }
+
+  .prize_info{
+    font-size: 1.1em;
+    padding: 30px 0;
+  }
+
+  .w1{
+    width: 30%;
+    top: 45%;
+  }
+
+  .w2{
+    width: 30%;
+    bottom: -15%;
+  }
+
+  .w4{
+    width: 30%;
+    top: 10%;
+    right: 0;
+  }
+
+  .l1{
+    top: 75%;
+  }
+
+  .p2{
+    top: 80%;
+  }
+
+  .oil_product{
+    margin-bottom: 20px;
+  }
+
+  .oil_pd:nth-child(1),
+  .oil_pd:nth-child(2)
+  {
+    width: 40%;
+    margin: 20px 0 20px;
+  }
+
+  .oil_pd{
+    width: 40%;
+    margin: 20px 0;
+  }
+
+  .oil_pd img{
+    width: 60%;
+  }
+
+  .oil_name .hightlight{
+    padding: 10px 30px;
+  }
+
+  .week_pd{
+    width: 40%;
+  }
+
+  .week_btbox {
+    display: block;
+  }
+
+  .week_btbox li{
+    font-size: 1.1em;
+    margin: 20px auto;
+    padding: 5px 20px;
+  }
+
+  .week_pd img{
+    width: 70%;
+  }
+
+
+}
+
+
+
+@media (max-width: 720px) {
+  .prize_titlebox{
+    padding: 0;
+  }
+
+  .prize_circle{
+    width: 100px;
+    height: 100px;
+    font-size: 1.2em;
+  }
+
+  .prize_title{
+    font-size: 1.2em;
+    margin: -10px 0 0;
+  }
+
+  .prize_title:before{
+    left: 0;
+    width: 100%;
+  }
+
+  .prize_title:after{
+    left: 0;
+    width: 100%;
+  }
+
+  .prize_circle{
+    position: relative;
+    left: 0;
+    margin: auto;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .activity_info{
+    font-size: 1em;
+    text-align: left;
+  }
+
+
+  .oil_pd:nth-child(1),
+  .oil_pd:nth-child(2)
+  {
+    width: 100%;
+  }
+
+  .oil_pd img{
+    width: 40%;
+  }
+
+  .oil_pd{
+    width: 100%;
+  }
+
+  .week_pd{
+    width: 100%;
+  }
+
+  .week_pd img{
+    width: 40%;
+  }
+
+  .week_name .hightlight{
+    display: inline-block;
+    padding: 5px 10%;
+  }
+
+  .w1{
+    width: 40%;
+  }
+
+  .w2{
+    width: 45%;
+  }
+
+  .w3{
+    width: 40%;
+    top: 50%;
+  }
+
+  .w4{
+    width: 45%;
+    top: 32%;
+  }
+
+  .p1{
+    width: 30%;
+    top: 48%;
+  }
+
+  .l1{
+    width: 25%;
+    top: 12%;
+  }
+
+  .p2{
+    width: 30%;
+    top: 15%;
+  }
+
+  .w5{
+    width: 45%;
+  }
+
+  .w6{
+    width: 55%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 460px) {
+  .activity{
+    padding: 30px 0;
+  }
+
+  .activity_btbox li{
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .week_btbox li{
+    padding: 0;
+  }
+
+}
+
+
+
+

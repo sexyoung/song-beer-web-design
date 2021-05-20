@@ -1,0 +1,288 @@
+.main{
+  position: relative;
+  min-height: calc(90vh - 80px);
+  min-width: 100vw;
+}
+
+/*----------login_01----------*/
+
+.page_text{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+  padding: 80px 0 50px;
+}
+
+.login{
+  padding-bottom: 100px;
+}
+
+
+.login_btbox a{
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+.login_btbox li{
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 0 auto 30px;
+}
+
+.login_btbox li:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.login_btbox li:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #bf9b11;
+  z-index: -2;
+}
+
+.login_btbox img{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.login_btbox span{
+  width: 102px;
+  text-align: center;
+}
+
+
+/*----------login_02----------*/
+
+.login_icheck{
+  width: 120px;
+  margin: auto;
+  padding: 80px 0 50px;
+}
+
+.login_icheck img{
+  width: 100%;
+  margin: auto;
+}
+
+.login_in{
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto 50px;
+}
+
+.login_check{
+  position: absolute;
+  top: 2px;
+  left: -25px;
+}
+
+.login_in span{
+  color: #7c590d;
+  max-width: 300px;
+}
+
+
+/*----------login03----------*/
+
+.login_iscan{
+  width: 120px;
+  margin: auto;
+  padding: 80px 0 30px;
+}
+
+.login_iscan img{
+  width: 100%;
+  margin: auto;
+}
+
+.login_scantext{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+}
+
+.login_scan{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #7c590d;
+  margin: 50px auto 0;
+}
+
+.login_scan_lt{
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border-left: 5px solid #f5cb07;
+  border-top: 5px solid #f5cb07;
+}
+
+.login_scan_rt{
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border-right: 5px solid #f5cb07;
+  border-top: 5px solid #f5cb07;
+}
+
+.login_scan_lb{
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border-left: 5px solid #f5cb07;
+  border-bottom: 5px solid #f5cb07;
+}
+
+.login_scan_rb{
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border-right: 5px solid #f5cb07;
+  border-bottom: 5px solid #f5cb07;
+}
+
+/*----------login04----------*/
+
+.login_iwrong{
+  width: 120px;
+  margin: auto;
+  padding: 80px 0 30px;
+}
+
+.login_iwrong img{
+  width: 100%;
+  margin: auto;
+}
+
+.login_wrongtext{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+}
+
+.login_wrongin{
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
+
+
+
+/* --- mobile --- */
+@media screen and (max-width: 1100px) {
+  .main{
+    position: relative;
+    min-height: calc(90vh - 60px);
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .page_text{
+    font-size: 1.3em;
+    padding: 50px 0 20px;
+  }
+
+  .login_btbox li{
+    font-size: 1.1em;
+    margin: 20px auto;
+    padding: 5px 20px;
+  }
+
+  .login_scantext,
+  .login_wrongtext{
+    font-size: 1.3em;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+@media screen and (max-width: 720px) {
+  .login_icheck,
+  .login_iwrong{
+    width: 80px;
+  }
+
+}
+
+
+@media screen and (max-width: 460px) {
+  .login_btbox li{
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .login_btbox img{
+    width: 40px;
+    margin-left: 5px;
+  }
+
+  .login_in{
+    width: 80%;
+    margin-left: 50px;
+  }
+
+  .login_scan{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+
+  .login_wrongin{
+    font-size: 1.1em;
+  }
+}
+
+
+
+
