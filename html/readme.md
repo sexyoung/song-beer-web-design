@@ -1,0 +1,19 @@
+## page
+- anima
+- award
+- index
+- login
+- login2
+- login3
+- login4
+- preview
+- record
+- sorry
+- success
+
+## component
+- footer
+- header
+- intro
+- notice
+- step
