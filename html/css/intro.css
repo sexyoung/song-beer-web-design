@@ -317,6 +317,7 @@
     top: unset;
     bottom: 20%;
   }
+}
 
 
 @media screen and (max-width: 460px) {
