@@ -1,7 +1,6 @@
 
 
 /*----------lightbox----------*/
-
 .lightbox_notice
 {
   position: fixed;
@@ -18,10 +17,10 @@
   display: block;
 }
 
-.notice{
+/* @deprecate 會造成彈出式視窗過大 */
+/* .notice{
   padding-top: 80px;
-
-}
+} */
 
 .notice_in{
   font-weight: 500;
