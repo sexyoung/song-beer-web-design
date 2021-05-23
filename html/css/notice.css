@@ -17,7 +17,7 @@
   display: block;
 }
 
-/* @deprecate 會造成彈出式視窗過大 */
+/* 會造成彈出式視窗過大 */
 /* .notice{
   padding-top: 80px;
 } */
