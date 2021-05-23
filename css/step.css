@@ -21,7 +21,9 @@
 #step {background:#FFEB9D;}
 
 .step{
-  padding-top: 80px;
+  /* 會造成彈出式視窗過大 */
+  /* padding-top: 80px; */
+  width: 100%;
   background:#FFEB9D;
 }
 
