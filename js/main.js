@@ -5,11 +5,7 @@ $(function(){
         $('header').load('header.html')
         $('footer').load('footer.html')
     }
-
-    setScroll();
-    setTop();
     
-
     //nav
     $(".burger").click(function(){
         $(".header").toggleClass("show");
@@ -75,13 +71,9 @@ $(window).scroll(function(){
 
 
 //loading	
-//$(window).load(function(){	
-	//$("#loading").fadeOut(800,0);
-	//setScroll();
-//});
-
-
-//$(window).scroll(function(){
-	//setScroll(); 
-//})
+$(window).load(function(){	
+	$("#loading").delay(0).fadeOut('slow');
+	setScroll();
+    setTop();
+});
 
