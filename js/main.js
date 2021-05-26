@@ -71,7 +71,7 @@ $(window).scroll(function(){
 
 
 //loading	
-$(window).load(function(){	
+$(document).ready(function(){	
 	$("#loading").delay(0).fadeOut('slow');
 	setScroll();
     setTop();
