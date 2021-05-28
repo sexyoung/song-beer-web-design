@@ -40,6 +40,8 @@
   z-index: 1;
   padding: 10px 20px;
   box-sizing: border-box;
+  background-color: rgba(0,0,0,0);
+  border: none;
   margin: 0 auto 30px;
 }
 
@@ -101,6 +103,11 @@
   position: absolute;
   top: 2px;
   left: -25px;
+}
+
+.login_notice{
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .login_in span{
