@@ -1,79 +1,83 @@
-$(function(){
-    // 因為我的 header 跟 footer 不是用 jq 戴入的
-    // 所以如果到我這邊不能執行這2行，會挫賽
-	if(localStorage.getItem('isDev') !== null) {
-        $('header').load('header.html')
-        $('footer').load('footer.html')
-    }
-    
-    //nav
-    $(".burger").click(function(){
-        $(".header").toggleClass("show");
-        $(".burger").toggleClass("show");
-    });
-    
-    $(".header .nav li").click(function(){
-        $(".header").toggleClass("show");
-        $(".burger").toggleClass("show");
-    });
+$(function() {
+  // 因為我的 header 跟 footer 不是用 jq 戴入的
+  // 所以如果到我這邊不能執行這2行，會挫賽
+  if(localStorage.getItem('isDev') !== null) {
+    $('header').load('header.html');
+    $('footer').load('footer.html');
+  }
 
-    //top
-    $("div.scroll_top").click(function() {
-        $("body,html").animate({scrollTop: 0},500);
-    });
+  $(".burger").off('click');
+  $(".header .nav li").off('click');
+  $("div.scroll_top").off('click');
+
+  // nav
+  $(".burger").click(function() {
+    $(".header").toggleClass("show");
+    $(".burger").toggleClass("show");
+  });
+
+  $(".header .nav li").click(function() {
+    $(".header").toggleClass("show");
+    $(".burger").toggleClass("show");
+  });
+
+  // top
+  $("div.scroll_top").click(function() {
+    $("body,html").animate({scrollTop: 0},500);
+  });
 
 
-})
+});
 
 
 
-//scrolltop
-function setTop(){
-    var win = $(window);
-    var scrollTop = win.scrollTop();
-    var winHeight = win.height();
+// scrolltop
+function setTop() {
+  const win = $(window);
+  const scrollTop = win.scrollTop();
+  const winHeight = win.height();
 
-    if(scrollTop > winHeight * 0.3 ){
-        $(".scroll_top").fadeIn();
+  if(scrollTop > winHeight * 0.3 ) {
+    $(".scroll_top").fadeIn();
+  }else{
+    $(".scroll_top").fadeOut();
+  }
+}
+
+function setScroll() {
+  const win = $(window);
+  const hWin = win.height();
+  const wWin = win.width();
+  const scroll = $(window).scrollTop();
+
+  const move = $(".mp, .mt, .ml, .mr, .mb, .ms");
+
+
+  move.each(function() {
+    const tCont = $(this).offset().top;
+
+
+    if(scroll > tCont - hWin*0.75) {
+      $(this).addClass("show");
     }else{
-        $(".scroll_top").fadeOut();
+      $(this).removeClass("show");
     }
+
+  });
 }
 
-function setScroll(){
-    var win = $(window);
-    var hWin = win.height();
-    var wWin = win.width();
-    var scroll = $(window).scrollTop();
+// scroll
+$(window).scroll(function() {
+  setScroll();
+  setTop();
 
-    var move = $(".mp, .mt, .ml, .mr, .mb, .ms");
-
-
-    move.each(function(){
-        var tCont = $(this).offset().top;
-
-        
-        if(scroll > tCont - hWin*0.75){
-            $(this).addClass("show");
-        }else{
-            $(this).removeClass("show");
-        }
-
-    })
-}
-
-//scroll
-$(window).scroll(function(){
-    setScroll();
-    setTop(); 
-    
-})
+});
 
 
-//loading	
-$(document).ready(function(){	
-	$("#loading").delay(0).fadeOut('slow');
-	setScroll();
-    setTop();
+// loading
+$(document).ready(function() {
+  $("#loading").delay(0).fadeOut('slow');
+  setScroll();
+  setTop();
 });
 
