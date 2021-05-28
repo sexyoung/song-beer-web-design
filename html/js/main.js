@@ -52,7 +52,6 @@ function setScroll() {
 
   const move = $(".mp, .mt, .ml, .mr, .mb, .ms");
 
-
   move.each(function() {
     const tCont = $(this).offset().top;
 
@@ -81,3 +80,9 @@ $(document).ready(function() {
   setTop();
 });
 
+// loading
+$(document).ready(function () {
+  $("#loading").delay(0).fadeOut("slow");
+  setScroll();
+  setTop();
+});
