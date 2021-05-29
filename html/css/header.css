@@ -1,0 +1,127 @@
+
+.header{
+  width: 100vw;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px #ba8000;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header .logo{
+  width: 130px;
+  padding: 11px 30px; 
+}
+
+.nav{
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.nav li {
+  display: inline;
+  cursor: pointer;
+  color: #7c590d;
+  font-size: 20px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-left: 20px;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; 
+}
+
+.burger{ 
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.burger .line{
+  width: 30px;
+  height: 3px;
+  background-color: #7c590d;
+  margin: 8px 0;
+}
+
+
+/* --- mobile --- */
+@media screen and (max-width: 1100px) {
+
+  .header{
+    height: 60px;
+    -moz-transition: height 0.3s 0.3s;
+    -o-transition: height 0.3s 0.3s;
+    -webkit-transition: height 0.3s 0.3s;
+    transition: height 0.3s 0.3s; 
+  }
+
+  .header .logo{
+    width: 100px;
+    padding: 8px 20px;
+  }
+
+  /* - header - */
+  .nav {
+    opacity: 0;
+    pointer-events: none;
+    right: 0; width: 100%;
+    text-align: center; top: 70px;
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(-0);
+    -webkit-transform: translateY(0);
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; 
+  }
+
+  .nav ul{
+    border-top: 1px solid #f5cb07;
+  }
+
+  .nav li{
+    display: block;
+    font-weight: 500;
+    padding: 4vh 0;
+    margin: 2px 0;
+  }
+
+  /* --- header - animation --- */
+  .header.show {
+    height: 100vh;
+    -moz-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
+  }
+
+  .header.show .nav { 
+    opacity: 1;
+    pointer-events: auto;
+    -moz-transition: opacity 0.3s 0.2s;
+    -o-transition: opacity 0.3s 0.2s;
+    -webkit-transition: opacity 0.3s 0.2s;
+    transition: opacity 0.3s 0.2s;
+  }
+
+  .burger{ 
+    display: block;
+  }
+
+}
+
+
+

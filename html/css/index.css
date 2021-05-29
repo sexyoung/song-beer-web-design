@@ -4,6 +4,10 @@
   font-family:'Boogaloo','微軟正黑體','Microsoft Jhenghei',Arial, sans-serif;
 }
 
+.bt_mb{
+  display: contents;
+}
+
 .kv{
   width: 100vw;
   height: calc(89vh - 80px);
@@ -436,6 +440,11 @@
   font-weight: 600;
 }
 
+.oil_sticker{
+  font-size: 0.8rem;
+  line-height: 0.5em;
+}
+
 .oil_small,
 .week_small{
   font-size: 0.8rem;
@@ -640,6 +649,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .bt_mb{
+    display: none;
+  }
+
   .activity{
     padding: 50px 0;
   }
@@ -649,13 +662,10 @@
     padding: 20px;
   }
 
-  .activity_btbox{
-    display: block;
-  }
-
   .activity_btbox li{
     font-size: 1.1em;
-    margin: 20px auto;
+    width: 100px;
+    margin: 20px;
     padding: 5px 20px;
   }
 
@@ -680,13 +690,17 @@
   }
 
   .w1{
-    width: 30%;
+    width: 25%;
     top: 45%;
   }
 
   .w2{
     width: 30%;
-    bottom: -15%;
+    bottom: -30%;
+  }
+
+  .w3{
+    top: 85%;
   }
 
   .w4{
@@ -699,8 +713,12 @@
     top: 75%;
   }
 
-  .p2{
+  .p1{
     top: 80%;
+  }
+
+  .p2{
+    top: 85%;
   }
 
   .oil_product{
@@ -727,17 +745,19 @@
     padding: 10px 30px;
   }
 
-  .week_pd{
-    width: 40%;
+  .week_product{
+    margin-bottom: 0;
   }
 
-  .week_btbox {
-    display: block;
+  .week_pd{
+    width: 40%;
+    margin-bottom: 20px;
   }
 
   .week_btbox li{
     font-size: 1.1em;
-    margin: 20px auto;
+    width: 100px;
+    margin: 20px;
     padding: 5px 20px;
   }
 
@@ -827,65 +847,72 @@
     text-align: left;
   }
 
+  .activity_btbox li{
+    height: 40px;
+    width: unset;
+    margin: 10px;
+    padding: 5px 20px;
+  }
+
 
   .oil_pd:nth-child(1),
   .oil_pd:nth-child(2)
   {
-    width: 100%;
+    width: 50%;
   }
 
   .oil_pd img{
-    width: 40%;
+    width: 60%;
   }
 
   .oil_pd{
-    width: 100%;
+    width: 50%;
   }
 
   .week_pd{
-    width: 100%;
+    width: 50%;
   }
 
   .week_pd img{
-    width: 40%;
+    width: 60%;
   }
 
   .week_name .hightlight{
-    display: inline-block;
+    margin: 20px 5px 5px;
     padding: 5px 10%;
   }
 
   .w1{
-    width: 40%;
+    width: 30%;
+    top: 75%;
   }
 
   .w2{
-    width: 45%;
+    width: 40%;
+    bottom: -20%
   }
 
   .w3{
     width: 40%;
-    top: 50%;
+    top: 90%;
   }
 
   .w4{
-    width: 45%;
-    top: 32%;
+    top: 20%;
   }
 
   .p1{
     width: 30%;
-    top: 48%;
+    top: 85%;
   }
 
   .l1{
     width: 25%;
-    top: 12%;
   }
 
   .p2{
     width: 30%;
-    top: 15%;
+    top: 80%;
   }
 
   .w5{
@@ -907,12 +934,61 @@
 
   .activity_btbox li{
     font-size: 1em;
-    padding: 0;
+    margin: 10px;
+    padding: 5px 10px;
+  }
+
+  .oil_pd img{
+    width: 80%;
+  }
+
+  .oil_name{
+    font-size: 14px;
+  }
+
+  .oil_name .hightlight{
+    padding: 5px 20px;
   }
 
   .week_btbox li{
-    padding: 0;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding: 5px 10px;
+    margin: 10px;
   }
+
+  .week_name{
+    font-size: 12px;
+  }
+
+  .week_name .hightlight{
+    padding: 5px 15px;
+  }
+
+  .week_small{
+    font-size: 10px;
+  }
+
+  .w1{
+    top: 90%;
+  }
+
+  .w2{
+    bottom: -20%
+  }
+
+  .w3{
+    top: 95%;
+  }
+
+  .w4{
+    top: 28%;
+  }
+
+  .p1{
+    top: 90%;
+  }
+  
 
 }
 

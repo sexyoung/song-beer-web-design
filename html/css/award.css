@@ -150,21 +150,27 @@
   transform: translateY(-50%);
 }
 
-.award_table{
+.award_table_top,
+.award_table_in{
   font-size: 1.2em;
   text-align: center;
   width: 100%;
 }
 
-.award_table td{
+.table_over{
+  overflow: scroll;
+  max-height: 380px;
+}
+
+.award_table_in td{
   width: 30.333%;
   background-color: #ffffff;
-  border: 1px solid #f5cb07;
+  border-bottom: 1px solid #f5cb07;
   box-sizing: border-box;
   padding: 20px;
 }
 
-.award_table th{
+.award_table_top th{
   width: 30.333%;
   background-color: #f5cb07;
   box-sizing: border-box;
@@ -187,21 +193,27 @@
   border-bottom: 1px solid #AD8F02;
 }
 
-.award_table2{
+.award_n{
+  border-left: 1px solid #f5cb07;
+  border-right: 1px solid #f5cb07; 
+}
+
+.award_table2_top,
+.award_table2_in{
   font-size: 1.2em;
   text-align: center;
   width: 100%;
 }
 
-.award_table2 td{
+.award_table2_in td{
   width: 25%;
   background-color: #ffffff;
-  border: 1px solid #f5cb07;
+  border-bottom: 1px solid #f5cb07;
   box-sizing: border-box;
   padding: 20px;
 }
 
-.award_table2 th{
+.award_table2_top th{
   width: 25%;
   background-color: #f5cb07;
   box-sizing: border-box;
@@ -209,19 +221,20 @@
 }
 
 .award_notice{
-  padding: 100px;
+  padding: 50px 100px;
   background-color: #f5cb07;
 }
 
 .award_notiocin{
   font-size: 1em;
+  font-weight: 500;
   margin-top: 50px;
 }
   
 
 .award_notiocin li{
   position: relative;
-  padding-left: 30px;
+  padding-left: 25px;
   margin-bottom: 5px;
 }
 
@@ -236,11 +249,6 @@
 
 
 /* --- mobile --- */
-@media screen and (max-width: 1100px) {
-
-
-}
-
 
 @media screen and (max-width: 1000px) {
   .page_text{
@@ -271,19 +279,20 @@
     font-size: 1em;
   }
 
+  .table_over{
+    max-height: 230px;
+  }
+
   .award_box{
     width: 90%;
     margin: 20px 0 50px 5%;
   }
 
-  .award_table,
-  .award_table2
-  {
+  .award_table_in,
+  .award_table_top,
+  .award_table2_in,
+  .award_table2_top{
     font-size: 1em;
-  }
-
-  .award_notioc{
-    padding: 50px;
   }
 
   .award_notiocin{
@@ -293,13 +302,11 @@
 
 }
 
-
-@media (max-width: 768px) {
-
-}
-
-
 @media screen and (max-width: 720px) {
+  .table_over{
+    max-height: 200px;
+  }
+
   .award_titlebox{
     padding: 0 0 20px;
   }
@@ -340,8 +347,8 @@
     margin: 20px 0 50px 2%;
   }
   
-  .award_table1 td,
-  .award_table2 td{
+  .award_table_in td,
+  .award_table2_in td{
     padding: 10px;
   }
 }
@@ -350,21 +357,31 @@
 
 @media screen and (max-width: 640px) {
   .award_notice{
-    padding: 30px 0 60px;
+    font-size: 14px;
+    padding: 30px 0;
+  }
+
+  .award_table_top,
+  .award_table_in,
+  .award_table2_top,
+  .award_table2_in{
+    font-size: 0.8em;
   }
 }
 
 
 @media screen and (max-width: 460px) {
-  .award_table,
-  .award_table2
-  {
-    font-size: 0.8em;
+
+  .award_table_top th,
+  .award_table2_top th{
+    letter-spacing: 0;
+    padding: 10px 5px;
   }
 
-  .award_table1 td,
-  .award_table2 td{
-    padding: 5px;
+  .award_table_in td,
+  .award_table2_in td{
+    padding: 3px;
+    letter-spacing: 0;
   }
 
 
