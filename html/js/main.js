@@ -26,6 +26,12 @@ $(function() {
     $("body,html").animate({scrollTop: 0},500);
   });
 
+  $("#songprize_bt").click(function() {
+    const delay = location.pathname !== '/' ? 300: 0;
+    setTimeout(function() {
+      $("body,html").animate({scrollTop: $("#songprize").offset().top},500);
+    }, delay);
+  });
 
 });
 
