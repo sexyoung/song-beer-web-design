@@ -76,4 +76,7 @@ ul, li {list-style:none;}
 @media screen and (max-width:460px) {
 	.kv {background-size:90%;}
 	.mb_br{display: block;}
+	.preview .intext p{margin-top: 5px;}
+	.btlt{width: 15%; bottom: -5px;}
+	.btrt{width: 25%; bottom: -5px;}
 }
