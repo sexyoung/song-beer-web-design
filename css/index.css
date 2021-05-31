@@ -8,6 +8,10 @@
   display: contents;
 }
 
+.special_br{
+  display: none;
+}
+
 .kv{
   width: 100vw;
   height: calc(89vh - 80px);
@@ -712,6 +716,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .special_br{
+    display: block;
+  }
+
   .bt_mb{
     display: none;
   }
@@ -918,6 +926,12 @@
   }
 }
 
+@media screen and (max-width: 646px) {
+  .special_br{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .kv_product1,
   .kv_product2{
@@ -1076,6 +1090,7 @@
   }
 
   .week_name .hightlight{
+    letter-spacing: 0;
     padding: 5px 15px;
   }
 
