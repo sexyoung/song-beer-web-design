@@ -197,6 +197,15 @@ a { text-decoration: none; color: #000;}
   right: 0;
 }
 
+.other{
+  position: absolute;
+}
+
+.other img{
+  width: 100%;
+}
+
+
 
 
 

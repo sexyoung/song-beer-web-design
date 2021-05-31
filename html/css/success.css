@@ -15,6 +15,7 @@
 }
 
 .success{
+  position: relative;
   padding-bottom: 50px;
 }
 
@@ -168,6 +169,72 @@ input{
   z-index: -2;
 }
 
+.success_btbox .success_b{
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #7c590d;
+  text-align: center;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 0 auto 30px;
+}
+
+.success_btbox .success_b:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.success_btbox .success_b:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #bf9b11;
+  z-index: -2;
+}
+
+.success_left{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 25%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.success_right{
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 25%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
 /*----------success_change----------*/
 
 .change_pic{
@@ -224,15 +291,6 @@ input{
     margin: 20px auto;
     padding: 5px 20px;
   }
-
-
-
-}
-
-
-
-@media (max-width: 768px) {
-
 }
 
 
@@ -253,6 +311,12 @@ input{
   .change_pic2{
     width: 180px;
   }
+
+  .success_left,
+  .success_right{
+    width: 50%;
+    top: 55%;
+  }
 }
 
 
@@ -265,6 +329,8 @@ input{
     font-size: 1em;
     padding: 0;
   }
+
+
 }
 
 
