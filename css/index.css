@@ -594,6 +594,41 @@
   z-index: -2;
 }
 
+.o1{
+  width: 8%;
+  top: 10%;
+  right: 10%;
+}
+
+.o2{
+  width: 10%;
+  bottom: 10%;
+  left: 5%;
+}
+
+.o3{
+  width: 12%;
+  top: 65%;
+  left: 3%;
+}
+
+.o4{
+  width: 23%;
+  top: 5%;
+  left: 3%;
+}
+
+.o5{
+  width: 8%;
+  top: -30%;
+  right: 5%;
+}
+
+.o6{
+  width: 8%;
+  bottom: 8%;
+  right: 8%;
+}
 
 
 
@@ -616,6 +651,34 @@
     top: 45%;
     left: 85%;
   }
+
+  .w4{
+    top: 15%;
+  }
+
+  .o2{
+    bottom: unset;
+    top: 15%;
+    left: 12%;
+  }
+
+  .o3{
+    top: 55%;
+  }
+
+  .o4{
+    top: 10%;
+    left: 0;
+  }
+
+  .o5{
+    top: -15%;
+  }
+
+  .o6{
+    bottom: 0;
+  }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -763,6 +826,33 @@
 
   .week_pd img{
     width: 70%;
+  }
+
+  .o1{
+    top: 8%;
+  }
+
+  .o2{
+    top: 12%;
+    left: 8%;
+  }
+
+  .o3{
+    top: 30%;
+  }
+
+  .o4{
+    width: 25%;
+    top: 15%;
+  }
+
+  .o5{
+    top: -100%;
+    bottom: unset;
+  }
+
+  .o6{
+    bottom: 0;
   }
 }
 
@@ -923,6 +1013,30 @@
     width: 55%;
   }
 
+  .o1{
+    width: 12%;
+    top: unset;
+    bottom: -25%;
+  }
+
+  .o2{
+    width: 15%;
+    top: unset;
+    bottom: -25%;
+  }
+
+  .o3{
+    width: 15%;
+    top: 75%;
+    left: 10%;
+  }
+
+  .o5{
+    width: 12%;
+    top: -10%;
+    right: 10%;
+  }
+
 
 }
 
@@ -987,6 +1101,30 @@
 
   .p1{
     top: 90%;
+  }
+
+  .o1{
+    width: 15%;
+    bottom: -32%;
+  }
+
+  .o2{
+    width: 18%;
+    bottom: -30%;
+  }
+
+  .o3{
+    width: 18%;
+    top: 80%;
+    left: 8%;
+  }
+
+  .o4{
+    display: none;
+  }
+
+  .o5{
+    right: 8%;
   }
   
 

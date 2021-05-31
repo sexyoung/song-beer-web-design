@@ -4,6 +4,30 @@
   min-width: 100vw;
 }
 
+.login_left{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 25%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.login_right{
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 25%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
 /*----------login_01----------*/
 
 .page_text{
@@ -215,14 +239,53 @@
   margin: 50px 0 20px;
 }
 
+/* --- other --- */
+.o1{
+  width: 15%;
+  bottom: 10%;
+  left: 20%;
+}
 
+.o2{
+  width: 20%;
+  bottom: 10%;
+  right: 15%;
+}
 
+.o3{
+  width: 25%;
+  bottom: 10%;
+  left: 15%;
+}
+
+.o4{
+  width: 24%;
+  bottom: 10%;
+  right: 12%;
+}
+
+.o5{
+  width: 25%;
+  bottom: 10%;
+  left: 15%;
+}
+
+.o6{
+  width: 24%;
+  bottom: 10%;
+  right: 12%;
+}
 
 /* --- mobile --- */
 @media screen and (max-width: 1100px) {
   .main{
     position: relative;
     min-height: calc(90vh - 60px);
+  }
+
+  .login_left,
+  .login_right{
+    width: 30%;
   }
 
 }
@@ -244,24 +307,74 @@
     font-size: 1.3em;
   }
 
+  .o1{
+    width: 20%;
+    left: 10%;
+  }
+  
+  .o2{
+    width: 25%;
+    right: 8%;
+  }
+
+  .o3{
+    width: 30%;
+    left: 10%;
+  }
+  
+  .o4{
+    width: 28%;
+    right: 8%;
+  }
+
+  .o5{
+    width: 30%;
+    left: 10%;
+  }
+  
+  .o6{
+    width: 28%;
+    right: 8%;
+  }
+
 }
-
-
-
-@media (max-width: 768px) {
-
-}
-
-
 
 @media screen and (max-width: 720px) {
   .login_icheck,
   .login_iwrong{
     width: 80px;
   }
-
 }
 
+
+@media screen and (max-width: 640px) {
+  .o1,
+  .o3,
+  .o4,
+  .o5{
+    display: none;
+  }
+
+  .o2{
+    width: 38%;
+    right: 30%;
+    bottom: 5%;
+  }
+
+  .o6{
+    width: 30%;
+    right: 10%;
+    bottom: 5%;
+    z-index: 5;
+  }
+
+  .login_left,
+  .login_right{
+    width: 40%;
+    top: unset;
+    bottom: -5%;
+  }
+}
 
 @media screen and (max-width: 460px) {
   .login_btbox li{
