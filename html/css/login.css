@@ -121,6 +121,8 @@
   max-width: 300px;
   position: relative;
   margin: 0 auto 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .login_check{
