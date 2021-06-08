@@ -1,0 +1,402 @@
+.main{
+  position: relative;
+  min-height: calc(90vh - 80px);
+  min-width: 100vw;
+}
+
+.step{
+  /* 會造成彈出式視窗過大 */
+  /* padding-top: 80px; */
+  width: 100%;
+  background:#FFEB9D;
+  padding: 50px 0;
+}
+
+.step_topbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.step_toptext{
+  font-weight: 500;
+  font-size: 1.2em;
+  background-color: #f5cb07;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.step_to{
+  width: 50px;
+  margin: 0 50px;
+}
+
+.step_to img{
+  width: 100%;
+}
+
+.step_qrtop{
+  width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.step_qrtop img{
+  width: 100%;
+}
+
+.step_in{
+  margin-top: 20px;
+}
+
+
+/*----------lightbox_step----------*/
+
+.step_box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.step_s{
+  width: 30%;
+  text-align: center;
+  margin: 20px 0 50px 0;
+}
+
+.step_num{
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: #f5cb07; 
+  padding: 3px 20px 8px;
+  z-index: 0;
+}
+
+.step_s:nth-child(1) .step_num:after,
+.step_s:nth-child(4) .step_num:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  width: 120%;
+  height: 2px;
+  z-index: -1;
+  background-color: #f5cb07;
+}
+
+.step_s:nth-child(2) .step_num:after,
+.step_s:nth-child(5) .step_num:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  width: 120%;
+  height: 2px;
+  z-index: -1;
+  background-color: #f5cb07;
+}
+
+.step_s:nth-child(2) .step_num:before,
+.step_s:nth-child(5) .step_num:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 120%;
+  height: 2px;
+  z-index: -1;
+  background-color: #f5cb07;
+}
+
+.step_s:nth-child(3) .step_num:before,
+.step_s:nth-child(6) .step_num:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 120%;
+  height: 2px;
+  z-index: -1;
+  background-color: #f5cb07;
+}
+
+.step_pic{
+  margin: auto;
+  width: 80%;
+  padding: 20px 0;
+}
+
+.step_pic img{
+  width: 100%
+}
+
+.step_text{
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: #7c590d;
+}
+
+.step_small{
+  text-align: center;
+  color: #7c590d;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.step_small a{
+  color: #7c590d;
+  text-decoration: underline;
+}
+
+.mb_br{
+  display: none;
+}
+
+.step_next{
+  width: 50px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.step_next img{
+  width: 100%;
+}
+
+.step_bottom,
+.step_qrbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.step_qrtext{
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #7c590d;
+  text-align: center;
+  padding-left: 8px;
+  margin: 20px;
+}
+
+.step_shy{
+  width: 50px;
+}
+
+.step_qrcode{
+  width: 35%;
+  margin: 0 5%;
+}
+
+.step_qrcode img{
+  width: 100%;
+}
+
+.step_people{
+  width: 25%;
+}
+
+
+
+ 
+
+
+/* --- mobile --- */
+@media screen and (max-width: 1100px) {
+  .main{
+    position: relative;
+    min-height: calc(90vh - 60px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .step_s{
+    width: 50%;
+    text-align: center;
+    margin: 20px 0 50px 0;
+  }
+
+  .step_pic{
+    width: 60%;
+  }
+
+  .step_num{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #f5cb07; 
+    padding: 3px 20px 8px;
+    z-index: 0;
+  }
+
+  .step_s:nth-child(3) .step_num:before{
+    content: none;
+  }
+
+  .step_s:nth-child(2) .step_num:after{
+    content: none;
+  }
+
+  .step_s:nth-child(5) .step_num:before{
+    content: none;
+  }
+
+  .step_s:nth-child(4) .step_num:after{
+    content: none;
+  }
+
+  .step_s:nth-child(1) .step_num:after{
+    width: 150%;
+    right: -140%;
+  }
+
+  .step_s:nth-child(2) .step_num:before{
+    left: -140%;
+    width: 150%;
+  }
+
+  .step_s:nth-child(3) .step_num:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 150%;
+    right: -140%;
+    height: 2px;
+    z-index: -1;
+    background-color: #f5cb07;
+  }
+
+
+  .step_s:nth-child(4) .step_num:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -140%;
+    width: 150%;
+    height: 2px;
+    z-index: -1;
+    background-color: #f5cb07;
+  }
+
+  .step_s:nth-child(5) .step_num:after{
+    width: 150%;
+    right: -140%;
+  }
+  
+  .step_s:nth-child(6) .step_num:before{
+    left: -140%;
+    width: 150%;
+  }
+
+  .step_qrtext{
+    font-size: 1.3em;
+  }
+
+
+}
+
+@media screen and (max-width: 720px) {
+  .step_pic{
+    width: 80%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  .step_num{
+    font-size: 1.2em;
+    padding: 0px 15px 8px;
+  }
+
+  .step_people{
+    width: 30%;
+  }
+
+  .step_qrcode{
+    width: 45%;
+  }
+
+  .step_people{
+    width: 20%;
+  }
+
+  .mb_br{
+    display: block;
+  }
+
+  .fw2,.fw1{
+    z-index: 2;
+  }
+
+}
+
+
+@media screen and (max-width: 460px) {
+  .step_s{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 50px 0;
+  }
+
+  .step_pic{
+    width: 80%;
+  }
+
+  .step_s:nth-child(1) .step_num:before,
+  .step_s:nth-child(6) .step_num:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    z-index: -1;
+    background-color: #f5cb07;
+  }
+
+  .step_s:nth-child(1) .step_num:after,
+  .step_s:nth-child(2) .step_num:after,
+  .step_s:nth-child(3) .step_num:after,
+  .step_s:nth-child(4) .step_num:after,
+  .step_s:nth-child(5) .step_num:after,
+  .step_s:nth-child(6) .step_num:after{
+    content: '';
+    width: 100%;
+    right: -100%;
+  }
+
+  .step_s:nth-child(1) .step_num:before,
+  .step_s:nth-child(2) .step_num:before,
+  .step_s:nth-child(3) .step_num:before,
+  .step_s:nth-child(4) .step_num:before,
+  .step_s:nth-child(5) .step_num:before,
+  .step_s:nth-child(6) .step_num:before{
+    content: '';
+    left: -100%;
+    width: 100%;
+  }
+
+  .step_qrtext{
+    font-size: 1.2em;
+  }
+
+  .step_shy{
+    width: 40px;
+  }
+}
+
+
+
+

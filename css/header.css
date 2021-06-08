@@ -123,5 +123,12 @@
 
 }
 
+@media screen and (max-width: 640px) {
+  .nav li{
+    font-size: 16px;
+    padding: 3vh;
+  }
+}
+
 
 

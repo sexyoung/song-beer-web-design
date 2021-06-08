@@ -24,7 +24,7 @@
 }
 
 .success_prize{
-  width: 150px;
+  width: 300px;
   margin: auto;
 }
 
@@ -235,6 +235,37 @@ input{
   z-index: -1;
 }
 
+/*----------success_prize----------*/
+.success_sorryprize{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.sorry_pic{
+  width: 20%
+}
+
+.sorry_pic img{
+  width: 100%;
+}
+
+.sorry_name .hightlight{
+  background-color: #f5cb07;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.special_br{
+  display: none;
+}
+
 /*----------success_change----------*/
 
 .change_pic{
@@ -291,13 +322,23 @@ input{
     margin: 20px auto;
     padding: 5px 20px;
   }
+
+  .sorry_pic{
+    width: 25%
+  }
+
+  .sorry_name .hightlight{
+    font-size: 12px;
+    padding: 5px;
+  }
+
 }
 
 
 
 @media screen and (max-width: 640px) {
   .success_prize{
-    width: 130px;
+    width: 250px;
   }
 
   .success_surprise{
@@ -315,7 +356,15 @@ input{
   .success_left,
   .success_right{
     width: 50%;
-    top: 55%;
+    top: 40%;
+  }
+
+  .sorry_pic{
+    width: 40%
+  }
+
+  .form{
+    padding: 20px;
   }
 }
 
@@ -328,6 +377,10 @@ input{
   .success_btbox li{
     font-size: 1em;
     padding: 0;
+  }
+
+  .sorry_pic{
+    width: 50%
   }
 
 
