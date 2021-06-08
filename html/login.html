@@ -58,6 +58,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css" />
     <link rel="stylesheet" type="text/css" href="css/notice.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196856772-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-196856772-1', {'page_title' : '登入頁'});
+    </script>
+
   </head>
 
   <body data-scroll-container class="smooth-scroll">
@@ -68,12 +78,12 @@
         <section class="login inner">
           <div class="page_text">請選擇登入方式</div>
           <div class="login_btbox">
-            <a href="login2.html"
+            <a href="login2.html" onclick="gtag('event', 'click', {'event_category' : '登入','event_label' : 'FB登入'});"
               ><button>
                 <img src="images/login/icons_fb.png" /><span>Facebook</span>
               </button></a
             >
-            <a href="login2.html"
+            <a href="login2.html" onclick="gtag('event', 'click', {'event_category' : '登入','event_label' : 'Google登入'});"
               ><button>
                 <img src="images/login/icons_google.png" /><span>Google</span>
               </button></a

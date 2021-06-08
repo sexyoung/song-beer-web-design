@@ -58,6 +58,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css" />
     <link rel="stylesheet" type="text/css" href="css/notice.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196856772-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-196856772-1', {'page_title' : '重複掃描頁'});
+    </script>
+
   </head>
 
   <body data-scroll-container class="smooth-scroll">
@@ -68,9 +78,9 @@
         <section class="login inner">
           <div class="login_iwrong"><img src="images/login/wrong.png" /></div>
           <div class="login_wrongtext">此QRcode已經掃描過囉</div>
-          <div class="login_wrongin">再來一罐爽啤</div>
+          <!--<div class="login_wrongin">再來一罐爽啤</div>-->
           <div class="login_btbox">
-            <a href="login3.html"
+            <a href="login3.html" onclick="gtag('event', 'click', {'event_category' : '重複掃描','event_label' : '繼續掃描'});"
               ><button>繼續掃描<br />QRcode</button></a
             >
           </div>
