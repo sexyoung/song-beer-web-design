@@ -13,7 +13,7 @@
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 0;
+  z-index: -1;
 }
 
 .login_right{
@@ -25,7 +25,7 @@
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 0;
+  z-index: -1;
 }
 
 /*----------login_01----------*/
@@ -101,6 +101,20 @@
 .login_btbox span{
   width: 102px;
   text-align: center;
+}
+
+.login_other{
+  font-size: 12px;
+  font-weight: 500;
+  color: #7c590d;
+  position: fixed;
+  left: 50%;
+  bottom: calc(11vh + 15px);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 20;
 }
 
 
@@ -241,6 +255,54 @@
   margin: 50px 0 20px;
 }
 
+/* --- login5 --- */
+.login_formbox{
+  width: 90%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px 20px 10px 20px;
+  margin: 0 auto 30px;
+}
+
+.form_list{
+  margin-bottom: 15px;
+}
+
+label{
+  width: 150px;
+  font-weight: 500;
+  float: left;
+}
+
+input{
+  width: calc(100% - 150px);
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid #666666;
+  background-color: rgba(0,0,0,0);
+  padding: 5px 0;
+}
+
+.red{
+  color: red;
+}
+
+.login5_box{
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto 50px;
+}
+
+.login5_info{
+  font-size: 14px;
+  color: #7c590d;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0px;
+}
+
 /* --- other --- */
 .o1{
   width: 15%;
@@ -276,6 +338,18 @@
   width: 24%;
   bottom: 10%;
   right: 12%;
+}
+
+.o8{
+  width: 15%;
+  bottom: 10%;
+  left: 12%;
+}
+
+.o7{
+  width: 20%;
+  bottom: 10%;
+  right: 10%;
 }
 
 /* --- mobile --- */
@@ -339,6 +413,15 @@
     right: 8%;
   }
 
+  .o8{
+    width: 18%;
+  }
+  
+  .o7{
+    width: 25%;
+    right: 5%;
+  }
+
 }
 
 @media screen and (max-width: 720px) {
@@ -353,14 +436,15 @@
   .o1,
   .o3,
   .o4,
-  .o5{
+  .o5
+  {
     display: none;
   }
 
   .o2{
     width: 38%;
     right: 30%;
-    bottom: 5%;
+    bottom: 10%;
   }
 
   .o6{
@@ -370,15 +454,20 @@
     z-index: 5;
   }
 
+  .o7,.o8{
+    z-index: 5;
+  }
+
   .login_left,
   .login_right{
     width: 40%;
     top: unset;
-    bottom: -5%;
+    bottom: -15%;
   }
 }
 
 @media screen and (max-width: 460px) {
+
   .login_btbox li{
     font-size: 1em;
     padding: 0;
@@ -403,8 +492,41 @@
   .login_wrongin{
     font-size: 1.1em;
   }
+
+  .o2{
+    width: 30%;
+    right: 30%;
+    top: 280px;
+    bottom: unset;
+  }
+
+  .o8{
+    display: none;
+  }
+
+  .o7{
+    width: 30%;
+    right: 30%;
+    bottom: 5%;
+  }
 }
 
+@media screen and (max-width: 380px) {
+  .o2{
+    display: none;
+  }
 
+  .ox{
+    width: 30%;
+    right: 30%;
+    bottom: 8%;
+  }
+
+  .o7{
+    width: 25%;
+    right: 35%;
+    bottom: 2%;
+  }
+}
 
 
