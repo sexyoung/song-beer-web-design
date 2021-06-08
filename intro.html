@@ -57,12 +57,22 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/intro.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196856772-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-196856772-1', {'page_title' : '18歲法規頁'});
+    </script>
+
   </head>
 
   <body data-scroll-container class="smooth-scroll">
     <div class="wrapper">
       <div class="logo">
-        <a href="index.html">
+        <a href="index.html" onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : 'logo'});">
           <img src="images/intro/logo_w.svg" alt="台灣啤酒" />
         </a>
       </div>
@@ -73,8 +83,8 @@
           </div>
           <div class="intro_in">你，滿18了嗎？</div>
           <div class="intro_bt">
-            <a href="index.html"><li>YES</li></a>
-            <li class="intro_no">NO</li>
+            <a href="index.html" onclick="gtag('event', 'click', {'event_category' : '18歲法規','event_label' : 'yes'});"><li>YES</li></a>
+            <li class="intro_no" onclick="gtag('event', 'click', {'event_category' : '18歲法規','event_label' : 'no'});">NO</li>
           </div>
         </div>
         <div class="intro_text_milk">

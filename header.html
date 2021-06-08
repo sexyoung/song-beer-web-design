@@ -5,26 +5,27 @@
   </head>
   <body>
     <div class="logo">
-      <a href="index.html">
-        <img src="images/logo.svg" alt="台灣啤酒" />
+      <a href="index.html" onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : 'logo'});">
+        <img src="images/intro/logo_w.svg" alt="台灣啤酒" />
       </a>
     </div>
 
     <nav class="nav">
       <ul>
-        <a href="index.html"><li id="songprize_bt">回到首頁</li></a>
-        <a href="index.html#songprize"><li id="songprize_bt">爽爽好禮</li></a>
+        <a href="index.html" onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : '回到首頁'});"><li id="songprize_bt">回到首頁</li></a>
+        <a href="index.html#songprize" onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : '爽爽好禮'});"><li id="songprize_bt">爽爽好禮</li></a>
         <a
           data-fancybox
           data-type="ajax"
           data-src="notice.html"
           data-filter="#notice"
           href="javascript:;"
+          onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : '活動辦法'});"
           ><li class="notice_open">活動辦法</li></a
         >
-        <a href="award.html"><li>得獎公告</li></a>
-        <a href="login.html"><li id="songprize_bt">立即掃描</li></a>
-        <a href="record.html"><li>觀看抽獎紀錄</li></a>
+        <a href="award.html" onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : '得獎公告'});"><li>得獎公告</li></a>
+        <a href="login.html" onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : '立即掃描'});"><li id="songprize_bt">立即掃描</li></a>
+        <a href="record.html" onclick="gtag('event', 'click', {'event_category' : 'menu','event_label' : '觀看抽獎紀錄'});"><li>觀看抽獎紀錄</li></a>
       </ul>
     </nav>
 

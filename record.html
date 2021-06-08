@@ -58,6 +58,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/record.css" />
     <link rel="stylesheet" type="text/css" href="css/notice.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196856772-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-196856772-1', {'page_title' : '抽獎紀錄頁'});
+    </script>
+
   </head>
 
   <body data-scroll-container class="smooth-scroll">
@@ -127,8 +137,8 @@
             </div>
           </div>
           <div class="record_btbox">
-            <a href="login3.html"><li>立即掃描</li></a>
-            <a href="#"><li>登出</li></a>
+            <a href="login3.html" onclick="gtag('event', 'click', {'event_category' : '抽獎紀錄','event_label' : '立即掃描'});"><li>立即掃描</li></a>
+            <a href="#" onclick="gtag('event', 'click', {'event_category' : '抽獎紀錄','event_label' : '登出'});"><li>登出</li></a>
           </div>
         </section>
         <div class="fwave fw1 ml"><img src="images/login/wave01.png" /></div>

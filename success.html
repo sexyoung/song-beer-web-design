@@ -58,6 +58,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/success.css" />
     <link rel="stylesheet" type="text/css" href="css/notice.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196856772-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-196856772-1', {'page_title' : '中獎結果頁'});
+    </script>
+
   </head>
 
   <body data-scroll-container class="smooth-scroll">
@@ -75,8 +85,8 @@
               </div>
             </div>
             <div class="success_name mt">
-              <p>【爽啤X油頭二世】<br />爽走天下行李箱</p>
-              <p class="name_small">(20吋/黑白顏色隨機 ; 附聯名防水貼紙)</p>
+              <p>爽走天下行李箱</p>
+              <p class="name_small">(20吋/黑白顏色隨機)</p>
             </div>
           </div>
           <img class="success_left" src="images/intro/intro_left.png" />
@@ -91,11 +101,11 @@
                 <p>*姓名手機為必填，收件地址/電⼦信箱擇⼀填寫</p>
               </div>
               <div class="form_list">
-                <label for="username">得獎姓名<span class="red">*</span></label>
+                <label for="username">中文姓名<span class="red">*</span></label>
                 <input type="text" name="username" id="username" />
               </div>
               <div class="form_list">
-                <label for="phone">得獎手機<span class="red">*</span></label>
+                <label for="phone">手機號碼<span class="red">*</span></label>
                 <input type="text" name="phone" id="phone" />
               </div>
               <div class="form_list">
@@ -108,7 +118,7 @@
               </div>
             </div>
             <div class="success_btbox">
-              <a class="bt_send"><div>確認送出</div></a>
+              <a class="bt_send" onclick="gtag('event', 'click', {'event_category' : '中獎','event_label' : '送出資料'});"><div>確認送出</div></a>
             </div>
           </div>
           <div class="success_change inner">
@@ -116,7 +126,7 @@
             <div class="change_pic"><img src="images/success/p1.png" /></div>
             <div class="change_in">延續您的爽勁</div>
             <div class="success_btbox">
-              <a href="login3.html"><li class="success_b">繼續掃描QRcode</li></a>
+              <a href="login3.html" onclick="gtag('event', 'click', {'event_category' : '中獎','event_label' : '繼續掃描'});"><li class="success_b">繼續掃描QRcode</li></a>
             </div>
           </div>
         </section>
