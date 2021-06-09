@@ -24,7 +24,7 @@
 }
 
 .success_prize{
-  width: 300px;
+  width: 200px;
   margin: auto;
 }
 
@@ -338,7 +338,7 @@ input{
 
 @media screen and (max-width: 640px) {
   .success_prize{
-    width: 250px;
+    width: 180px;
   }
 
   .success_surprise{
@@ -359,9 +359,6 @@ input{
     top: 40%;
   }
 
-  .sorry_pic{
-    width: 40%
-  }
 
   .form{
     padding: 20px;
@@ -379,8 +376,8 @@ input{
     padding: 0;
   }
 
-  .sorry_pic{
-    width: 50%
+  .success_sorryprize{
+    margin-top: 10px;
   }
 
 
