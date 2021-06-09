@@ -243,28 +243,12 @@
 
 
 /* --- mobile --- */
-@media screen and (max-width: 1100px) {
-  .logo{ 
-    width: 100px;
-    padding: 8px 20px;
-  }
 
-	.songbeer,
-	.milk{
-		width: 30%;
-	}
 
-  .intro_left,
-  .intro_right{
-    width: 30%;
-  }
-
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .songbeer,
   .milk{
-    width: 40%;
+    width: 35%;
   }
 
   .intro_bt li{
@@ -286,7 +270,7 @@
 @media screen and (max-width: 640px) {
   .songbeer,
   .milk{
-    width: 50%;
+    width: 60%;
   }
 
   .intro_talk,
