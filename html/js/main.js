@@ -22,7 +22,7 @@ $(function() {
   });
 
   // top
-  $("div.scroll_top, div.index_top").click(function() {
+  $("div.scroll_top, a.index_top").click(function() {
     $("body,html").animate({scrollTop: 0},500);
   });
 
