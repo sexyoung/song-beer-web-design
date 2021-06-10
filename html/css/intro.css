@@ -6,7 +6,7 @@
 
 .main{
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-image: url('../images/intro/intro_bg.jpg');
   background-position: bottom;
@@ -126,7 +126,7 @@
 .songbeer{
 	width: 23%;
 	position: absolute;
-	bottom: 15%;
+	bottom: 10%;
 	left: 50%;
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -139,7 +139,7 @@
 .milk{
 	width: 23%;
 	position: absolute;
-	bottom: 15%;
+	bottom: 10%;
 	left: 50%;
   z-index: 1;
 }
@@ -246,9 +246,20 @@
 
 
 @media screen and (max-width: 768px) {
+  .logo{
+    width: 100px;
+    padding: 11px 10px;
+  }
+
   .songbeer,
   .milk{
-    width: 35%;
+    width: 30%;
+    bottom: 8%;
+  }
+
+  .intro_talk,
+  .intro_in{
+    font-size: 1.2em;
   }
 
   .intro_bt li{
@@ -259,9 +270,10 @@
 }
 
 
-@media screen and (max-width: 823px) and (max-height: 450px) {
+@media screen and (max-width: 768px) and (max-height: 500px) {
   .main{
     height: calc(100vw * 5 /4);
+    margin-bottom: 10vh;
   }
 }
 
@@ -270,13 +282,10 @@
 @media screen and (max-width: 640px) {
   .songbeer,
   .milk{
-    width: 60%;
+    width: 40%;
   }
 
-  .intro_talk,
-  .intro_in{
-    font-size: 1.2em;
-  }
+  
 
   .intro_talk{
     padding: 10px;
@@ -299,16 +308,14 @@
 }
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 540px) {
   .intro_talk,
   .intro_in{
     font-size: 1em;
   }
 
-
-
   .intro_text{
-    top: 12%;
+    top: 15%;
   }
 
   .intro_bt li{
@@ -320,6 +327,20 @@
   .intro_right{
     bottom: 10%;
   }
+
+  .songbeer,
+  .milk{
+    width: 50%;
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .songbeer,
+  .milk{
+    width: 50%;
+    bottom: 15%;
+  }
 }
 
 @media screen and (min-width: 1100px) and (max-height: 720px) {
@@ -330,6 +351,29 @@
 
 }
 
+@media screen and (max-width: 540px) and (max-height: 640px) {
+  .intro_in{
+    margin: 10px 0;
+  }
+
+  .songbeer,
+  .milk{
+    width: 40%;
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 460px) and (max-height: 500px) {
+  .intro_in{
+    margin: 10px 0;
+  }
+
+  .songbeer,
+  .milk{
+    width: 35%;
+    bottom: 5%;
+  }
+}
 
 
 

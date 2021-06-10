@@ -22,7 +22,7 @@ $(function() {
   });
 
   // top
-  $("div.scroll_top").click(function() {
+  $("div.scroll_top, div.index_top").click(function() {
     $("body,html").animate({scrollTop: 0},500);
   });
 
@@ -62,7 +62,7 @@ function setScroll() {
     const tCont = $(this).offset().top;
 
 
-    if(scroll > tCont - hWin*0.75) {
+    if(scroll > tCont - hWin*0.8) {
       $(this).addClass("show");
     }else{
       $(this).removeClass("show");
