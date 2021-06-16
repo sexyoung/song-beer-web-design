@@ -1,7 +1,7 @@
 $(function() {
   // 因為我的 header 跟 footer 不是用 jq 戴入的
   // 所以如果到我這邊不能執行這2行，會挫賽
-  if(localStorage.getItem('isDev') !== null) {
+  if(localStorage && localStorage.getItem('isDev') !== null) {
     $('header').load('header.html');
     $('footer').load('footer.html');
   }
