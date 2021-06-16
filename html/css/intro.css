@@ -124,9 +124,9 @@
 }
 
 .songbeer{
-	width: 23%;
+	width: 20%;
 	position: absolute;
-	bottom: 10%;
+	bottom: 5%;
 	left: 50%;
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -137,9 +137,9 @@
 }
 
 .milk{
-	width: 23%;
+	width: 20%;
 	position: absolute;
-	bottom: 10%;
+	bottom: 5%;
 	left: 50%;
   z-index: 1;
 }
@@ -339,14 +339,24 @@
   .songbeer,
   .milk{
     width: 50%;
-    bottom: 15%;
+    bottom: 13%;
   }
 }
 
-@media screen and (min-width: 1100px) and (max-height: 720px) {
+@media screen and (min-width: 768px) and (max-height: 850px) {
   .songbeer,
   .milk{
     width: 35vh;
+  }
+
+  .intro_talk,
+  .intro_in{
+    font-size: 1.2em;
+  }
+
+  .intro_bt li{
+    font-size: 1.1em;
+    padding: 5px 20px;
   }
 
 }
@@ -358,12 +368,12 @@
 
   .songbeer,
   .milk{
-    width: 40%;
+    width: 38%;
     bottom: 10%;
   }
 }
 
-@media screen and (max-width: 460px) and (max-height: 500px) {
+@media screen and (max-width: 460px) and (max-height: 520px) {
   .intro_in{
     margin: 10px 0;
   }
