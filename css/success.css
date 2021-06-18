@@ -16,16 +16,23 @@
 
 .success{
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .success_pic{
   position: relative;
+  margin-right: 15px;
 }
 
 .success_prize{
   width: 200px;
   margin: auto;
+}
+
+.success_top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .success_surprise{
@@ -48,8 +55,6 @@
 .success_name{
   font-size: 1em;
   font-weight: 500;
-  text-align: center;
-  margin-top: 30px;
 }
 
 .success_sorry{
@@ -65,7 +70,7 @@
 .success_form
 {
   background-color: #f5cb07;
-  padding: 50px 0 100px;
+  padding: 30px 0 100px;
 }
 
 .success_change{
@@ -338,11 +343,15 @@ input{
 
 @media screen and (max-width: 640px) {
   .success_prize{
-    width: 180px;
+    width: 130px;
   }
 
   .success_surprise{
-    width: 200px;
+    width: 130px;
+  }
+
+  .success_name{
+    font-size: 0.8em;
   }
 
   .change_pic{
