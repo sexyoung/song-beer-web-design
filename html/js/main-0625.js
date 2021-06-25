@@ -83,18 +83,18 @@
 
 
         // loading
-        $(document).ready(function() {
-          $("#loading").delay(0).fadeOut('slow');
-          setScroll();
-          setTop();
-        });
+        // $(document).ready(function() {
+        //   $("#loading").delay(0).fadeOut('slow');
+        //   setScroll();
+        //   setTop();
+        // });
 
-        // loading
-        $(document).ready(function () {
-          $("#loading").delay(0).fadeOut("slow");
-          setScroll();
-          setTop();
-        });
+        // // loading
+        // $(document).ready(function () {
+        //   $("#loading").delay(0).fadeOut("slow");
+        //   setScroll();
+        //   setTop();
+        // });
 
 
       } else {
