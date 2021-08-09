@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {margin:0px; padding:0px;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+
+
+body, html {position:relative; font-size:16px; font-family:'Noto Sans TC','微軟正黑體','Microsoft Jhenghei',sans-serif; font-weight:300; overflow-x:hidden; background:black;}
+a, input, button {text-decoration:none; outline:none !important;}
+a:hover, a:focus, a:active {text-decoration:none; cursor:pointer !important; outline:none !important;}
+ul, li {list-style:none;}
+
+#layout {position:relative; width:100%; height:100vh; background:url(../images/preview/bg_tp_lt.png),url(../images/preview/bg_tp_rt.png), #fff4a1; background-position:top left, top right; background-repeat:no-repeat; background-size:30%, 30%;}
+
+.logo {display:block; width:120px; height:auto; position:absolute; top:10px; left:10px; z-index:20;}
+
+
+.kv {display:block; position:relative; width:100%; height:60vh; background:url(../images/preview/main_kv.png) center no-repeat; background-size:contain;}
+
+
+.preview {display:block; position:relative; width:100%; height:29vh; background:#f6d20a; overflow:visible;}
+.preview .intext {display:block; width:90%; position:absolute; top:50%; left:50%; 
+	-webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);}
+
+.preview .intext h1 {text-align:center; font-weight:700; color:black; font-size:4vh; }
+.preview .intext p { margin-top: 10px; text-align:center; font-weight:400; color:#845205; font-size:2vh; padding: 0 20px; box-sizing: border-box;}
+    
+.btlt, .btrt {display:block; position:absolute; z-index:5;}
+.btlt {width:20%; height:auto; bottom:0px; left:0px;}
+.btrt {width:33%; height:auto; bottom:0px; right:0px;}
+
+
+#ft_atten {display:block; position:fixed; bottom:0px; width:100%; height:auto; min-height:11vh; background:black; z-index:10;}
+#ft_atten img {display:block; width:100%; height:auto;}
+#ft_atten img.mb {display:none;}
+
+.mb_br{display: none;}
+
+
+@media screen and (max-width:1100px) {
+	.kv {background-size:120%;}
+	.preview .intext p { font-size:1.5vh;}
+}
+
+@media screen and (max-width:900px) {
+	.kv {background-size:140%;}
+}
+
+@media screen and (max-width:768px) {
+	
+	#layout {background-size:40%, 40%;}
+	
+	.logo {width:60px; height:auto; }
+	
+	.kv {background:url(../images/preview/main_kv_mb.png) center no-repeat; background-size:contain;}
+	
+	.preview {overflow:hidden;}
+	.preview h1 {font-size:6vw; top:40%; z-index:10;}
+	
+	.btlt {width:20%; height:auto; bottom:-10px; left:0px;}
+	.btrt {width:33%; height:auto; bottom:-10px; right:0px;}
+	
+	#ft_atten img.pc {display:none;}
+	#ft_atten img.mb {display:block;}
+
+	.preview .intext h1 { font-size:3.5vh;}
+	.preview .intext p { font-weight:400; font-size:12px; padding: 0 25px; box-sizing: border-box;}
+
+}
+
+@media screen and (max-width:460px) {
+	.kv {background-size:90%;}
+	.mb_br{display: block;}
+}
